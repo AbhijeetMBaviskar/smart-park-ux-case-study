@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPark Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <header>
+            <div class="menu-icon">☰</div>
+            <h1>SmartPark</h1>
+            <div class="profile-icon">👤</div>
+        </header>
+
+        <section class="search-section">
+            <h2>Find your spot 🚗</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Where are you going?">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="filters">
+                <span class="filter-chip active">Nearby</span>
+                <span class="filter-chip">Cheapest</span>
+                <span class="filter-chip">Covered</span>
+            </div>
+        </section>
+
+        <section class="parking-list">
+            <h3>Available Now</h3>
+            
+            <div class="card">
+                <div class="card-image color-1"></div>
+                <div class="card-details">
+                    <div class="card-header">
+                        <h4>Metro Station A1</h4>
+                        <span class="badge green">5 Spots</span>
+                    </div>
+                    <p>📍 0.2 km away • ₹20/hr</p>
+                    <button class="btn-primary" onclick="bookSpot('Metro Station A1')">Book Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image color-2"></div>
+                <div class="card-details">
+                    <div class="card-header">
+                        <h4>City Mall Basement</h4>
+                        <span class="badge red">Full</span>
+                    </div>
+                    <p>📍 1.5 km away • ₹40/hr</p>
+                    <button class="btn-disabled">Notify Me</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image color-3"></div>
+                <div class="card-details">
+                    <div class="card-header">
+                        <h4>Public Square</h4>
+                        <span class="badge orange">2 Spots</span>
+                    </div>
+                    <p>📍 0.8 km away • ₹10/hr</p>
+                    <button class="btn-primary" onclick="bookSpot('Public Square')">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active">🏠<br>Home</div>
+            <div class="nav-item">🎟️<br>My Pass</div>
+            <div class="nav-item">⚙️<br>Settings</div>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

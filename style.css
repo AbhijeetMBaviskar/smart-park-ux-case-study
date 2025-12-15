@@ -1,0 +1,120 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Mobile Frame Simulation */
+.mobile-container {
+    width: 375px;
+    height: 812px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    border: 8px solid #333;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header h1 { margin: 0; font-size: 1.2rem; color: #0055FF; }
+
+/* Search Section */
+.search-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.search-bar {
+    display: flex;
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+input { border: none; outline: none; flex: 1; }
+.search-btn { background: none; border: none; cursor: pointer; }
+
+/* Filters */
+.filters { margin-top: 15px; display: flex; gap: 10px; }
+.filter-chip {
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.filter-chip.active { background: #0055FF; color: white; }
+
+/* Parking List */
+.parking-list { padding: 20px; height: 450px; overflow-y: auto; }
+.card {
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+.card-image { height: 100px; width: 100%; }
+.color-1 { background: #a8dadc; }
+.color-2 { background: #457b9d; }
+.color-3 { background: #1d3557; }
+
+.card-details { padding: 15px; }
+.card-header { display: flex; justify-content: space-between; align-items: center; }
+h4 { margin: 0; }
+
+/* Badges */
+.badge { font-size: 0.7rem; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+.green { background: #e6fffa; color: #00a86b; }
+.red { background: #fff5f5; color: #e53e3e; }
+.orange { background: #fffaf0; color: #dd6b20; }
+
+/* Buttons */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background: #0055FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-disabled {
+    width: 100%;
+    padding: 10px;
+    background: #ddd;
+    color: #888;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: not-allowed;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+.nav-item { text-align: center; font-size: 0.7rem; color: #888; cursor: pointer; }
+.nav-item.active { color: #0055FF; }
